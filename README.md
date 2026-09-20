@@ -1,4 +1,17 @@
-# RAG 检索增强生成学习项目
+# AI 学习项目合集
+
+个人 AI 大模型应用开发学习仓库，包含 RAG 检索增强生成与 LangChain 核心特性两大模块。
+
+## 仓库内容
+
+| 目录 | 内容 |
+|------|------|
+| 根目录 | **RAG 检索增强生成** — 基于 LangGraph + Milvus 的混合检索 RAG 实践 |
+| [`langchain_study/`](langchain_study/) | **LangChain 系统学习** — Agent、记忆系统、Guardrails、HITL、MCP 等练习代码 |
+
+---
+
+# RAG 检索增强生成
 
 基于 **LangGraph + Milvus** 的 RAG（Retrieval-Augmented Generation）实践项目，从基础检索问答到自适应 RAG（Adaptive RAG），完整学习检索增强生成的核心流程与工程实现。
 
@@ -68,7 +81,16 @@ RAG_PROJECT/
 ├── test_vector/            # 向量检索测试
 ├── draw_png.py             # 工作流图可视化工具
 ├── graph_rag1.png          # 基础 RAG 流程图
-└── graph_rag2.png          # 自适应 RAG 流程图
+├── graph_rag2.png          # 自适应 RAG 流程图
+└── langchain_study/         # LangChain 系统学习（见子目录 README）
+    ├── models/             # 模型调用、工具调用、结构化输出
+    ├── agent_part/         # Agent 创建、流式、异步、错误处理
+    ├── short_memory/       # 短期记忆与上下文管理
+    ├── long_memory/        # 长期记忆
+    ├── human_in_the_loop/  # 人机协同（HITL）
+    ├── guardrails/          # 安全护栏（PII 脱敏等）
+    ├── mcp_part/            # MCP 协议实战
+    └── runtime_and_context_engineering/  # 运行时与上下文工程
 ```
 
 ## 自适应 RAG 工作流
@@ -176,4 +198,4 @@ python agent/rag_agent.py
 
 ## 作者
 
-[guui913](https://github.com/guui913) — RAG 检索增强生成学习实践项目
+[guui913](https://github.com/guui913) — AI 大模型应用开发学习实践
